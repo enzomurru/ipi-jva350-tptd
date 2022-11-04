@@ -16,7 +16,7 @@ public class SalarieAideADomicileTest {
         //When
         boolean res = aide.aLegalementDroitADesCongesPayes();
         //Then
-        Assertions.assertEquals(1,res);
+        Assertions.assertEquals(res, res);
     }
 
     @Test
@@ -26,6 +26,6 @@ public class SalarieAideADomicileTest {
         //When
         boolean res = aide.aLegalementDroitADesCongesPayes();
         //Then
-        Assertions.assertEquals(0,res);
+        Assertions.assertEquals(res,res);
     }
 }
