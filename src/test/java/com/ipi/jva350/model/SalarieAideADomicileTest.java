@@ -12,11 +12,10 @@ public class SalarieAideADomicileTest {
     void aLegalementDroitADesCongesPayesTrue() {
         //Given
         SalarieAideADomicile aide = new SalarieAideADomicile();
-            //LocalDate.now(), LocalDate.now(), 0, 0;
         //When
         boolean res = aide.aLegalementDroitADesCongesPayes();
         //Then
-        Assertions.assertEquals(res, res);
+        Assertions.assertEquals(true, res);
     }
 
     @Test
@@ -26,6 +25,6 @@ public class SalarieAideADomicileTest {
         //When
         boolean res = aide.aLegalementDroitADesCongesPayes();
         //Then
-        Assertions.assertEquals(res,res);
+        Assertions.assertEquals(false, res);
     }
 }
