@@ -68,7 +68,7 @@ public class SalarieAideADomicile {
      * @return
      */
     public boolean aLegalementDroitADesCongesPayes() {
-        return this.getJoursTravaillesAnneeNMoins1() > 10;
+        return this.getJoursTravaillesAnneeNMoins1() >= 10;
     }
 
     /**
