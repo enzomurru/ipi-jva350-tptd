@@ -1,7 +1,6 @@
 package com.ipi.jva350.model;
 
 import io.cucumber.java.en.When;
-import jdk.vm.ci.meta.Local;
 import org.assertj.core.api.Java6StandardSoftAssertionsProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

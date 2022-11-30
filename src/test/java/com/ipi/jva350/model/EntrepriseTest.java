@@ -1,7 +1,5 @@
 package com.ipi.jva350.model;
 
-import io.cucumber.java.en.When;
-import jdk.vm.ci.meta.Local;
 import org.assertj.core.api.Java6StandardSoftAssertionsProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -25,17 +23,16 @@ public class EntrepriseTest {
     })
 
     @Test
-    void estJourFerie(String date, boolean expectedJourFerierBool)
-    {
+    void testEstJourFerie(String date, boolean expectedJourFerierBool) {
+
         //Given
         Entreprise entreprise = new Entreprise();
         LocalDate d = LocalDate.parse(date);
 
         //When
-        boolean jourferier = Entreprise.estJourFerie(d);
+        boolean jourferier = entreprise.estJourFerie(d);
 
         //Then
         assertEquals(expectedJourFerierBool, jourferier);
     }
-
 }
