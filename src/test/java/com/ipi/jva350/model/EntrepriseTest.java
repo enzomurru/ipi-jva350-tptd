@@ -18,7 +18,7 @@ public class EntrepriseTest {
 
     @ParameterizedTest(name = "La date {0} est un jour férié : {1}")
     @CsvSource({
-            "'2012-04-08','true'",
+            "'2012-04-09','true'",
             "'2016-04-08', 'true'",
             "'2013-04-08', 'false'",
             "'2000-04-08', 'false'"
@@ -35,7 +35,7 @@ public class EntrepriseTest {
         boolean jourferier = Entreprise.estJourFerie(d);
 
         //Then
-        Assertions.assertEquals(expectedJourFerierBool, jourferier);
+        assertEquals(expectedJourFerierBool, jourferier);
     }
 
 }
