@@ -1,5 +1,8 @@
 package com.ipi.jva350.model;
 
+import io.cucumber.java.en.When;
+import jdk.vm.ci.meta.Local;
+import org.assertj.core.api.Java6StandardSoftAssertionsProvider;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -10,7 +13,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class EntrepriseTest {
+public class EntrepriseTest {
 
 
     @ParameterizedTest(name = "La date {0} est un jour férié : {1}")
