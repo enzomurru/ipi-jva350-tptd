@@ -35,7 +35,7 @@ public class EntrepriseTest {
         boolean jourferier = Entreprise.estJourFerie(d);
 
         //Then
-        Assertions.assertEquals(false, jourferier);
+        Assertions.assertEquals(expectedJourFerierBool, jourferier);
     }
 
 }
