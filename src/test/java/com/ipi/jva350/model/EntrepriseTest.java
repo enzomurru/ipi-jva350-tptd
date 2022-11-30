@@ -12,14 +12,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class EntrepriseTest {
 
-    /*
-    @ParameterizedTest(name = "La date {0} est férié : {1}")
+
+    @ParameterizedTest(name = "La date {0} est un jour férié : {1}")
     @CsvSource({
-            "'2012-04-08','true'"
+            "'2012-04-08','true'",
+            "'2016-04-08', 'true'",
+            "'2013-04-08', 'false'",
+            "'2000-04-08', 'false'"
     })
-    */
+
     @Test
-    void estJourFerie(String date)
+    void estJourFerie(String date, boolean expectedJourFerierBool)
     {
         //Given
         Entreprise entreprise = new Entreprise();
