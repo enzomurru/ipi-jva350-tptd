@@ -29,10 +29,10 @@ class EntrepriseTest {
         LocalDate d = LocalDate.parse(date);
 
         //When
-        boolean res = Entreprise.estJourFerie(LocalDate.now());
+        boolean jourferier = Entreprise.estJourFerie(d);
 
         //Then
-        Assertions.assertEquals(false, res);
+        Assertions.assertEquals(false, jourferier);
     }
 
 }
